@@ -90,6 +90,8 @@
         <activity android:name=".activity.home.AddYangcheActivity" />
         <activity android:name=".activity.home.RoadescueActivity" />
         <activity android:name=".activity.home.FuelcardActivity" />
+        <activity android:name=".activity.personal.DriverAuthActivity" />
+        <activity android:name=".activity.personal.MyOrderActivity"></activity>
     </application>
 
 </manifest>

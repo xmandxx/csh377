@@ -4,6 +4,8 @@ import android.app.Application;
 import android.content.Context;
 import android.content.Intent;
 
+import com.xmwang.cyh.common.Data;
+
 /**
  * @Description: MyApplication
  * @author: CTS
@@ -37,6 +39,8 @@ public class MyApplication extends Application {
         super.onCreate();
         mcontext = this;
         instances = this;
+        //刷新用户数据
+        Data.instance.reUserInfo();
 //        ActiveAndroid.initialize(this);//初始化ORM框架
 //        Hawk.init(this).build();
 ////        getAppInfo();

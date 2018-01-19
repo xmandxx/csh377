@@ -6,7 +6,9 @@ import android.view.WindowManager;
 
 import com.google.gson.Gson;
 
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
+import java.util.Date;
 import java.util.Map;
 
 /**
@@ -177,5 +179,11 @@ public class Common {
 //        Gson gson = new Gson();
 //        String jsonStr = gson.toJson(map);
 //        return jsonStr;
+    }
+
+    public static String generateFileName() {
+        String timeStamp = new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
+        String imageFileName = "JPEG_" + timeStamp + "_";
+        return imageFileName;
     }
 }

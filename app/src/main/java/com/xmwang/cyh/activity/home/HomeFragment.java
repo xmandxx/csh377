@@ -133,29 +133,29 @@ public class HomeFragment extends LazyLoadFragment {
                     case 4://道路救援
                         startActivity(new Intent(context,RoadescueActivity.class));
                         break;
-                    case 5://车辆股价
+                    case 6://车辆股价
 //                        Intent intent_buy = new Intent(context, FindBuyActivity.class);
 //                        startActivity(intent_buy);
                         break;
-                    case 6://车险
+                    case 7://车险
 //                        Intent intent_buy = new Intent(context, FindBuyActivity.class);
 //                        startActivity(intent_buy);
                         break;
-                    case 7://油耗
+                    case 8://油耗
 //                        Intent intent_buy = new Intent(context, FindBuyActivity.class);
 //                        startActivity(intent_buy);
                         break;
-                    case 8://拼车
+                    case 9://拼车
 //                        Intent intent_buy = new Intent(context, FindBuyActivity.class);
 //                        startActivity(intent_buy);
                         break;
-                    case 9://代驾
+                    case 10://代驾
                         startActivity(new Intent(context, com.xmwang.cyh.daijia.IndexActivity.class));
                         break;
-                    case 10://自驾游
-//                        Intent intent_buy = new Intent(context, FindBuyActivity.class);
-//                        startActivity(intent_buy);
+                    case 11://自驾游
+
                         break;
+
                 }
             }
         });

@@ -13,6 +13,8 @@ import android.widget.TextView;
 
 import com.bumptech.glide.load.engine.DiskCacheStrategy;
 import com.xmwang.cyh.R;
+import com.xmwang.cyh.activity.personal.DriverAuthActivity;
+import com.xmwang.cyh.activity.personal.MyOrderActivity;
 import com.xmwang.cyh.activity.personal.SettingActivity;
 import com.xmwang.cyh.activity.personal.WalletActivity;
 import com.xmwang.cyh.application.GlideApp;
@@ -20,6 +22,7 @@ import com.xmwang.cyh.common.Data;
 import com.xmwang.cyh.common.LazyLoadFragment;
 import com.xmwang.cyh.common.RetrofitHelper;
 import com.xmwang.cyh.model.UserInfo;
+import com.xmwang.cyh.utils.ToastUtils;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
@@ -142,14 +145,24 @@ public class PersonalFragment extends LazyLoadFragment {
             case R.id.ll_aiche:
                 break;
             case R.id.ll_renzheng:
+                if (Data.instance.getUserInfo().getDriver_status() == 0){
+                    ToastUtils.getInstance().toastShow("您的申请已提交，请等待审核");
+                    return;
+                }
+                if (Data.instance.getUserInfo().getDriver_status() == 1){
+                    startActivity(new Intent(context, DriverAuthActivity.class));
+                }
                 break;
             case R.id.ll_kaquan:
+                startActivity(new Intent(context,CouponsActivity.class));
                 break;
             case R.id.ll_order:
+                startActivity(new Intent(context,MyOrderActivity.class));
                 break;
             case R.id.ll_daijia:
                 break;
             case R.id.ll_yangche:
+                startActivity(new Intent(context, YangcheActivity.class));
                 break;
             case R.id.ll_youhao:
                 break;

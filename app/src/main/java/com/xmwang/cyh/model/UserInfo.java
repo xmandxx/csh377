@@ -7,10 +7,11 @@ import java.util.List;
  */
 
 public class UserInfo {
+
     /**
      * code : 200
-     * message : 用户信息
-     * data : [{"user_name":"18937935591","user_id":69,"password":"e10adc3949ba59abbe56e057f20f883e","mobile_phone":"18937935591","admin_id":1,"headimg":"/data/headimg/20170906/1fb4424bc1dc1779b541164b381149bb.jpeg","driver_id":9,"rank_points":0,"user_money":"0.00","sex":1,"real_name":"我们自己的","collection":0}]
+     * message : 成功登录
+     * data : [{"user_name":"18937935591","user_id":69,"mobile_phone":"18937935591","admin_id":1,"headimg":"","driver_id":9,"rank_points":0,"user_money":"302.20","sex":1,"real_name":"q我们自1己的","driver_status":1,"collection":0}]
      */
 
     private int code;
@@ -45,21 +46,20 @@ public class UserInfo {
         /**
          * user_name : 18937935591
          * user_id : 69
-         * password : e10adc3949ba59abbe56e057f20f883e
          * mobile_phone : 18937935591
          * admin_id : 1
-         * headimg : /data/headimg/20170906/1fb4424bc1dc1779b541164b381149bb.jpeg
+         * headimg :
          * driver_id : 9
          * rank_points : 0
-         * user_money : 0.00
+         * user_money : 302.20
          * sex : 1
-         * real_name : 我们自己的
+         * real_name : q我们自1己的
+         * driver_status : 1
          * collection : 0
          */
 
         private String user_name;
         private int user_id;
-        private String password;
         private String mobile_phone;
         private int admin_id;
         private String headimg;
@@ -68,6 +68,7 @@ public class UserInfo {
         private String user_money;
         private int sex;
         private String real_name;
+        private int driver_status;
         private int collection;
 
         public String getUser_name() {
@@ -84,14 +85,6 @@ public class UserInfo {
 
         public void setUser_id(int user_id) {
             this.user_id = user_id;
-        }
-
-        public String getPassword() {
-            return password;
-        }
-
-        public void setPassword(String password) {
-            this.password = password;
         }
 
         public String getMobile_phone() {
@@ -156,6 +149,14 @@ public class UserInfo {
 
         public void setReal_name(String real_name) {
             this.real_name = real_name;
+        }
+
+        public int getDriver_status() {
+            return driver_status;
+        }
+
+        public void setDriver_status(int driver_status) {
+            this.driver_status = driver_status;
         }
 
         public int getCollection() {

@@ -6,6 +6,9 @@ import com.xmwang.cyh.model.DriveInfo;
 import com.xmwang.cyh.model.TempInfo;
 import com.xmwang.cyh.model.UserInfo;
 
+import retrofit2.Callback;
+import retrofit2.Response;
+
 /**
  * Created by xmwang on 2017/12/29.
  */
@@ -50,7 +53,6 @@ public enum Data {
     public TempInfo.DataBean getTempInfo() {
         return tempInfo;
     }
-
 
     public boolean getIsLogin(){
         return !getUserId().equals("0");
@@ -131,5 +133,35 @@ public enum Data {
             this.setUserId(String.valueOf(userInfo.getUser_id()));
         }
 
+    }
+
+    public void reUserInfo(){
+        if (!this.getIsLogin()){
+            return;
+        }
+        retrofit2.Call<UserInfo> call = RetrofitHelper.instance.getApiUserService().getuserinfo(
+                Data.instance.AdminId,
+                Data.instance.getUserId()
+        );
+
+        call.enqueue(new Callback<UserInfo>() {
+            @Override
+            public void onResponse(retrofit2.Call<UserInfo> call, Response<UserInfo> response) {
+
+                UserInfo model = response.body();
+                if (model.getCode() != RetrofitHelper.instance.SUCCESS_CODE) {
+                    return;
+                }
+                if (model.getData().size() > 0) {
+                    Data.instance.setUserInfo(model.getData().get(0));
+                }
+
+            }
+
+            @Override
+            public void onFailure(retrofit2.Call<UserInfo> call, Throwable t) {
+
+            }
+        });
     }
 }

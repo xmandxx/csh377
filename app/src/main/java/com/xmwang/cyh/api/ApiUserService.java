@@ -1,6 +1,7 @@
 package com.xmwang.cyh.api;
 
 import com.xmwang.cyh.model.BaseModel;
+import com.xmwang.cyh.model.OrderModel;
 import com.xmwang.cyh.model.UserInfo;
 
 import retrofit2.Call;
@@ -54,4 +55,13 @@ public interface ApiUserService {
                              @Field("real_name") String realName,
                              @Field("user_name") String userName,
                              @Field("sex") String sex);
+
+    //编辑用户信息
+    @FormUrlEncoded
+    @POST("userinfo/my_order")
+    Call<OrderModel> myOrder(@Field("admin_id") String admin_id,
+                             @Field("user_id") String user_id,
+                             @Field("order_type") int order_type,
+                             @Field("pageSize") int pageSize,
+                             @Field("pageIndex") int pageIndex);
 }
