@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:id="@+id/popup_bg"
+    android:background="#22000000"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="150dp"
+        android:background="@drawable/shape_popup_km"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="起步"
+                    android:textColor="#808080"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/popup_t1"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/shape"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/color_text_gray80"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="公里，超出后每"
+                    android:textColor="#808080"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/popup_t2"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/shape"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/color_text_gray80"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="公里"
+                    android:textColor="#808080"
+                    android:textSize="14dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="加收"
+                    android:textColor="#808080"
+                    android:textSize="13dp" />
+
+                <TextView
+                    android:id="@+id/popup_t3"
+                    android:layout_width="40dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="3dp"
+                    android:layout_marginRight="3dp"
+                    android:background="@drawable/shape"
+                    android:clickable="true"
+                    android:gravity="center"
+                    android:textColor="@color/color_text_gray80"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="元。"
+                    android:textColor="#808080"
+                    android:textSize="14dp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1px"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:background="@color/color_text_gray80" />
+        <TextView
+            android:id="@+id/popup_t4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="完成"
+            android:clickable="true"
+            android:textSize="18dp"
+            android:gravity="center"
+            android:textColor="@color/mediumaquamarine"/>
+
+    </LinearLayout>
+
+</LinearLayout>

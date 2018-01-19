@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar"
+        android:background="@color/navColor">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="编辑参数"
+            android:textColor="@color/whiteColor"
+            android:textSize="@dimen/text_bar" />
+
+        <LinearLayout
+            android:id="@+id/title_back"
+            android:layout_width="@dimen/common_bar"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/bar_back"
+                android:layout_height="@dimen/bar_back"
+                android:src="@mipmap/ic_back" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/title_right"
+            android:layout_width="100dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:gravity="center|right">
+
+            <TextView
+                android:id="@+id/title_right_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="15dp"
+                android:text="保存"
+                android:textColor="@color/whiteColor" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="@dimen/spacing">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="比例"
+                android:textColor="@color/blackColor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="可以在原里程的基础上增加百分比，仅适合网络不稳定的地区，为防止客户投诉请谨慎使用"
+                android:textColor="@color/gray"
+                android:textSize="12dp" />
+
+            <RadioGroup
+                android:id="@+id/rdo_gorup"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/image_m"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <RadioButton
+                    android:id="@+id/rdo_100"
+                    android:textColor="@drawable/fillet"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/spacing"
+                    android:layout_weight="1"
+                    android:background="@drawable/fillet"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="100%" />
+
+                <RadioButton
+                    android:id="@+id/rdo_120"
+                    android:textColor="@drawable/fillet"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/spacing"
+                    android:layout_weight="1"
+                    android:background="@drawable/fillet"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="120%" />
+
+                <RadioButton
+                    android:id="@+id/rdo_150"
+                    android:textColor="@drawable/fillet"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@drawable/fillet"
+                    android:button="@null"
+                    android:gravity="center"
+                    android:text="150%" />
+
+            </RadioGroup>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_marginTop="20dp"
+                android:text="选择计费模板"
+                android:textColor="@color/blackColor" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="自由切换自定义计费模板"
+                android:textColor="@color/gray"
+                android:textSize="12dp" />
+            <com.xmwang.cyh.common.FlexRadioGroup
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/rdo_temp_group"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                app:flexWrap="wrap" />
+            <!--<com.xmwang.cyh.common.FlexRadioGroup-->
+                <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+                <!--xmlns:app="http://schemas.android.com/apk/res-auto"-->
+                <!--android:id="@+id/rdo_temp_group"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="10dp"-->
+                <!--app:flexWrap="wrap"-->
+                <!--app:alignItems="stretch"-->
+                <!--app:alignContent="stretch">-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rdo_1001"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_marginRight="@dimen/spacing"-->
+                    <!--android:background="@drawable/fillet"-->
+                    <!--android:button="@null"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="计费模板1" />-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rdo_1202"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:layout_marginRight="@dimen/spacing"-->
+                    <!--android:background="@drawable/fillet"-->
+                    <!--android:button="@null"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="计费模板2" />-->
+
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rdo_1503"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:background="@drawable/fillet"-->
+                    <!--android:button="@null"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="计费模板3" />-->
+                <!--<RadioButton-->
+                    <!--android:id="@+id/rdo_15032"-->
+                    <!--android:layout_width="100dp"-->
+                    <!--android:layout_height="20dp"-->
+                    <!--android:background="@drawable/fillet"-->
+                    <!--android:button="@null"-->
+                    <!--android:gravity="center"-->
+                    <!--android:text="计费模板3" />-->
+
+            <!--</com.xmwang.cyh.common.FlexRadioGroup>-->
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="130dp"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_vertical"
+            android:orientation="vertical">
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn_setting_temp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginLeft="@dimen/spacing"
+                android:layout_marginRight="@dimen/spacing"
+                fancy:fb_defaultColor="@color/navColor"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="5dp"
+                fancy:fb_text="设置模板"
+                fancy:fb_textColor="#FFFFFF" />
+
+            <mehdi.sakout.fancybuttons.FancyButton
+                android:id="@+id/btn_add_order"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/spacing"
+                android:layout_marginRight="@dimen/spacing"
+                fancy:fb_defaultColor="@color/navColor"
+                fancy:fb_iconPosition="left"
+                fancy:fb_radius="5dp"
+                fancy:fb_text="创建订单"
+                fancy:fb_textColor="#FFFFFF" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

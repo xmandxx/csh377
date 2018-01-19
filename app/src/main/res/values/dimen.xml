@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--xmwang-->
+    <dimen name="row_height">40dp</dimen>
+    <dimen name="spacing">10dp</dimen>
+    <!--Material Design规范尺寸-->
+    <dimen name="bottombar_height">48dp</dimen>
+    <dimen name="common_item_height">48dp</dimen>
+    <dimen name="common_marginleft">16dp</dimen>
+    <dimen name="button_height">48dp</dimen>
+    <dimen name="common_input">48dp</dimen>
+    <dimen name="common_bar">48dp</dimen>
+    <dimen name="common_marginleft_ln">10dp</dimen>
+    <dimen name="common_margintop_ln">8dp</dimen>
+    <dimen name="view_mar_height">8dp</dimen>
+    <dimen name="view_mar_height_small">5dp</dimen>
+
+    <dimen name="statusbar_view_height">0dp</dimen>
+
+    <dimen name="home_action_img">25dp</dimen>
+    <dimen name="information_action_img">22dp</dimen>
+    <dimen name="action_paddingtop">3dp</dimen>
+    <dimen name="action_paddingbottom">1dp</dimen>
+    <dimen name="home_action_t">12dp</dimen>
+    <dimen name="home_action_pad">3dp</dimen>
+    <dimen name="home_action_imgmar">0dp</dimen>
+    <dimen name="image_small">15dp</dimen>
+    <dimen name="image_m">25dp</dimen>
+    <dimen name="image_h">35dp</dimen>
+    <dimen name="image_xh">45dp</dimen>
+    <dimen name="image_action">40dp</dimen>
+    <dimen name="image_action_h">50dp</dimen>
+    <dimen name="image_item_brand">60dp</dimen>
+    <!--字体-->
+    <dimen name="text_small">12dp</dimen>
+    <dimen name="text_small2">13dp</dimen>
+    <dimen name="text_9">9dp</dimen>
+    <dimen name="text_10">10dp</dimen>
+    <dimen name="text_11">11dp</dimen>
+    <dimen name="text_12">12dp</dimen>
+    <dimen name="text_13">13dp</dimen>
+    <dimen name="text_14">14dp</dimen>
+    <dimen name="text_15">15dp</dimen>
+    <dimen name="text_16">16dp</dimen>
+    <dimen name="text_17">17dp</dimen>
+    <dimen name="text_18">18dp</dimen>
+    <dimen name="text_m_black">15dp</dimen>
+    <dimen name="text_h">16dp</dimen>
+    <dimen name="text_title_small">16dp</dimen>
+    <dimen name="text_bar">20dp</dimen>
+    <dimen name="text_m_small">13dp</dimen>
+    <dimen name="text_list_title">15dp</dimen>
+    <dimen name="text_list_content">14dp</dimen>
+    <dimen name="text_price_h">16dp</dimen>
+    <dimen name="text_place_h">16dp</dimen>
+
+    <!--通用-->
+    <dimen name="title_paddingLeft">10dp</dimen>
+    <dimen name="content_paddingLeft">10dp</dimen>
+    <dimen name="width41">180dp</dimen>
+    <dimen name="item_padtop">16dp</dimen>
+    <dimen name="item_padleft">16dp</dimen>
+    <dimen name="item_itemmar">3dp</dimen>
+    <dimen name="item_detail_height">48dp</dimen>
+    <dimen name="item_detail_pad">16dp</dimen>
+    <dimen name="item_height_news">100dp</dimen>
+    <dimen name="bar_back">22dp</dimen>
+
+    <!--我的-->
+    <dimen name="person_head_mar">10dp</dimen>
+    <dimen name="person_action_height">90dp</dimen>
+    <dimen name="person_action_mar">5dp</dimen>
+    <dimen name="quality_radio">12dp</dimen>
+
+    <!--首页-->
+    <dimen name="home_title_view_marleft">16dp</dimen>
+    <dimen name="home_title_text_marleft">24dp</dimen>
+
+    <!--详情页-->
+    <dimen name="collect_hieght">48dp</dimen>
+</resources>

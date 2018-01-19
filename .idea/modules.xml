@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cyh.iml" filepath="$PROJECT_DIR$/cyh.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_easyrecyclerview/library_easyrecyclerview.iml" filepath="$PROJECT_DIR$/library_easyrecyclerview/library_easyrecyclerview.iml" />
+      <module fileurl="file://$PROJECT_DIR$/library_jdselector/library_jdselector.iml" filepath="$PROJECT_DIR$/library_jdselector/library_jdselector.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sweet_alert_dialog_library/sweet_alert_dialog_library.iml" filepath="$PROJECT_DIR$/sweet_alert_dialog_library/sweet_alert_dialog_library.iml" />
+    </modules>
+  </component>
+</project>

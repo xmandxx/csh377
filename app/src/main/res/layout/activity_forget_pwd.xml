@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:fancy="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/common_bar"
+        android:background="@color/navColor">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="找回密码"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_bar" />
+
+        <LinearLayout
+            android:id="@+id/title_back"
+            android:layout_width="@dimen/common_bar"
+            android:layout_height="match_parent"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="@dimen/bar_back"
+                android:layout_height="@dimen/bar_back"
+                android:src="@mipmap/ic_back" />
+        </LinearLayout>
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="20dp">
+        <EditText
+            android:id="@+id/txt_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:drawableBottom="@drawable/line"
+            android:textSize="@dimen/text_14"
+            android:inputType="phone"
+            android:hint="输入手机号"/>
+        <EditText
+            android:id="@+id/txt_new_pwd"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@null"
+            android:drawableBottom="@drawable/line"
+            android:textSize="@dimen/text_14"
+            android:inputType="textPassword"
+            android:hint="输入新密码"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <EditText
+                android:id="@+id/txt_code"
+                android:layout_width="0dp"
+                android:layout_height="40dp"
+                android:layout_weight="1"
+                android:background="@null"
+                android:textSize="@dimen/text_14"
+                android:drawableBottom="@drawable/line"
+                android:hint="输入验证码"/>
+            <TextView
+                android:id="@+id/btn_send_code"
+                android:layout_width="120dp"
+                android:layout_height="match_parent"
+                android:text="发送验证码"
+                android:textColor="@color/navColor"
+                android:textSize="@dimen/text_14"
+                android:gravity="center_vertical|right"
+                android:drawableBottom="@drawable/line"
+                />
+        </LinearLayout>
+        <mehdi.sakout.fancybuttons.FancyButton
+            android:layout_marginTop="60dp"
+            android:id="@+id/btn_done"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            fancy:fb_defaultColor="@color/navColor"
+            fancy:fb_iconPosition="left"
+            fancy:fb_radius="5dp"
+            fancy:fb_text="提交修改"
+            fancy:fb_textColor="#FFFFFF" />
+    </LinearLayout>
+
+</LinearLayout>
