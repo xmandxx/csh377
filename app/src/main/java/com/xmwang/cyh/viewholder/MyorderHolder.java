@@ -38,7 +38,33 @@ public class MyorderHolder extends BaseViewHolder<OrderModel.DataBean> {
 
     @Override
     public void setData(final OrderModel.DataBean data) {
-
-
+        //暂时这样处理
+        if (data != null) {
+            txtTitle.setText(data.getSupplier_name());
+            switch (data.getOrder_type()){
+                case 1:
+                    txtTitleRight.setText("已使用");
+                    break;
+                case 2:
+                    txtTitleRight.setText("待付款");
+                    break;
+                case 3:
+                    txtTitleRight.setText("待使用");
+                    break;
+                case 4:
+                    txtTitleRight.setText("退款成功");
+                    break;
+            }
+            txtGoodsName.setText(data.getGoods_name());
+            txtGoodsDetail.setText("");
+            txtUnitPrice.setText(data.getGoods_price());
+            txtUnitNumber.setText(String.valueOf(data.getGoods_number()));
+            txtNumber.setText(String.valueOf(data.getGoods_number()));
+            txtPrice.setText(data.getGoods_amount());
+            GlideApp.with(getContext())
+                    .load(RetrofitHelper.instance.baseAdminUrl + data.getOriginal_img())
+                    .diskCacheStrategy(DiskCacheStrategy.RESOURCE)
+                    .into(img);
+        }
     }
 }
